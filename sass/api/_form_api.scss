@@ -1,0 +1,174 @@
+/** 
+ * Form api system
+ * =============== */
+@import "compass/css3";
+@import "compass/utilities";
+
+/**
+ * Form property
+ * ============= */
+$form-with : auto;     // form with if you need put value "auto"
+$form-bg: #76AFDA;        // form background color
+$form-pd: 10px;         // padding on form
+$form-margin: 20px;   // margin for form
+
+/**
+ * Item property
+ * ============= */
+$item-bg: #fff;                   // Form item background
+$item-border: 1px solid #4A4A4A;  // Form item border
+$item-margin: 10px 0;             // Form item margin
+$item-padding: 5px;               // Form item padding
+
+$item-min-width: 200px;           // Minimum item width
+
+/**
+ * Custom mode for filed
+ * === */
+/* Form */
+@mixin form() {
+  @include border-radius( 10px );
+}
+
+/* Form field */
+@mixin form-field() {
+  
+}
+
+/* Field input */
+@mixin input() {
+  /* recomend to change only font's and colors */
+  
+}
+
+
+/*
+ * Mixin form
+ * */
+ 
+@mixin frow( $width: 33.33% , $margin: 10px ) {
+  margin-left: -$margin;
+  @include legacy-pie-clearfix();
+    
+  .form-item {
+    width: $width;
+    float: left;
+    min-width: $item-min-width;
+    label {
+      margin-left: $margin;
+    }
+    .input-wrapp {
+      margin-left: $margin;
+    }    
+  }
+}
+
+/**
+ * Form api core
+ * =============================== */
+form {
+  background: $form-bg;
+  padding: $form-pd;
+  width: $form-with;
+  margin: $form-margin;
+  min-width: $item-min-width;
+  @include form();
+  
+  .form-item {
+    margin: 10px 0;
+  }
+  
+  label.block {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .input-wrapp {
+    background-color: $item-bg;
+    border: $item-border;
+    margin: $item-margin;
+    padding: $item-padding;  
+    @include form-field();
+  
+    input[type=text],
+    input[type=url],
+    input[type=tel],
+    input[type=email],
+    select {
+      background: none;
+      border: none;
+      margin: 0;
+      width: 100%;
+      padding: 0;
+      
+      &:focus {
+        outline: 0;
+      }
+      
+      @include input();
+    } // field list end
+    
+  }//firm item end
+  
+  input[type=submit],
+  input[type=button] {
+    background-color: #F0F0F0;
+    border: 1px solid #8F8F8F;
+    padding: 3px 9px;
+    color: #3A3A3A;
+    cursor: pointer;
+    @include border-radius( 5px );
+    
+    &:hover {
+      background-color: #F9F9F9;
+    }
+    
+  }
+  
+  .tarea {
+    @include legacy-pie-clearfix();
+    
+    .input-wrapp {
+      
+      textarea {
+        background: none;
+        border: none;
+        resize: vertical;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  
+/* rowwing layout */
+  .frow-2 {
+    @include frow( $width: 50% );
+  }
+  
+  .frow-3 {
+    @include frow( $width: 33.33% , $margin: 40px );
+  }
+  
+  .frow-4 {
+    @include frow( $width: 25% );
+  }
+  
+  .frow-5 {
+    @include frow( $width: 20% );
+  }
+  
+  .frow-6 {
+    @include frow( $width: 16.66% );
+  }
+  
+  .frow-7 {
+    @include frow( $width: 14.28% );
+  }
+  
+  .frow-8 {
+    @include frow( $width: 12.5% );
+  }
+  
+}//form end
+/* field row asset mixin */

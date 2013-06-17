@@ -87,7 +87,7 @@ form {
     background-color: $item-bg;
     border: $item-border;
     margin: $item-margin;
-    padding: $item-padding;  
+    padding: $item-padding;
     @include form-field();
   
     input[type=text],

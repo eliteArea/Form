@@ -13,7 +13,7 @@ $(document).ready(function(){
   // global variables
     settings = {};
     element.data('apiForm' , this);
-    
+    var field;
   // Init lightbox
     this.init = function(element , options) {
   
@@ -21,7 +21,23 @@ $(document).ready(function(){
       settings = $.extend( {} , $.apiSource.defaultOptions , options );
       
     // execute code
-      alert('testiramo');
+      
+      this.seter();
+      this.focus();
+      
+    };
+    this.seter = function() {
+      field = element.find('.input-wrapp').children();
+    };
+    this.focus = function() {
+      
+      field.focus(function(){
+        $(this).parent().addClass('focus');
+      });
+      
+      field.blur(function() {
+        $(this).parent().removeClass('focus');
+      });
       
     };
         

@@ -41,7 +41,6 @@ $item-min-width: 200px;           // Minimum item width
   
 }
 
-
 /*
  * Mixin form
  * */
@@ -88,8 +87,9 @@ form {
     border: $item-border;
     margin: $item-margin;
     padding: $item-padding;
+    cursor: text;
     @include form-field();
-  
+    
     input[type=text],
     input[type=url],
     input[type=tel],
@@ -170,5 +170,33 @@ form {
     @include frow( $width: 12.5% );
   }
   
+  .frow {
+    
+    &.align {
+      text-align: center;
+      .form-item {
+        display: inline-block;
+        float: none;
+        margin-left: -4px;
+        label {
+          display: block;
+          text-align: left;
+        }
+      }
+    }
+    
+  }
+  
 }//form end
 /* field row asset mixin */
+
+
+@media all and ( max-width : 660px ) {
+  form {
+    .frow {
+      .form-item {
+        min-width: 100%;
+      }
+    }
+  }
+}

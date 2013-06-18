@@ -24,10 +24,11 @@ $(document).ready(function(){
       
       this.seter();
       this.focus();
+      this.clickFocus();
       
     };
     this.seter = function() {
-      field = element.find('.input-wrapp').children();
+      field = element.find( settings['fieldWrap'] ).children();
     };
     this.focus = function() {
       
@@ -40,6 +41,12 @@ $(document).ready(function(){
       });
       
     };
+    
+    this.clickFocus = function() {
+      field.parent().on('click',function() {
+        $(this).children().focus();
+      });
+    };
         
   // init element function
     this.init( element , options );
@@ -47,7 +54,7 @@ $(document).ready(function(){
 
 // default options
   $.apiSource.defaultOptions = {
-    target: false // default keycode for enter
+    fieldWrap: '.input-wrapp'
   }
 
 //setup create object

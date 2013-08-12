@@ -1,13 +1,6 @@
+body {
 
-form {
-  
-  .input-wrapp {
-    
-    &.focus {
-      border-color: #D2262B;
-      @include box-shadow(red 2px 2px 10px);
-    }
-    
-  }
+  //background-color: #C0D7BB;
+  @include background-image(linear-gradient( top, #AEAEAE, #F0F0F0 ));
   
 }

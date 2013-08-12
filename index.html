@@ -13,134 +13,62 @@
     
     <link rel="stylesheet" type="text/css" href="css/screen.css" />                               <!-- -->
   
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-    <script type="text/javascript" src="js/apiform.js"></script>
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/apiform.js"></script> -->
   
   </head>
   <body>  	
       
       <form method="post">
+<!-- textarea
+================================================================================================ -->
+        <h2>Text area</h2>
         
         <div class="form-item">
           <label for="ta">Tekst area: </label>
             <div class="tarea">
-              <div class="input-wrapp">
+              <label class="input-wrapp">
                 <textarea name="test" cols="50" rows="10" id="ta" ></textarea>
-              </div>
-            </div>
-        </div>
-      </form>
-      
-      <br/>
-      <form method="post">
-        
-        <div class="form-item">
-          <label for="ta">Tekst area: </label>
-            <div class="tarea">
-              <div class="input-wrapp">
-                <textarea name="test" cols="50" rows="10" id="ta" ></textarea>
-              </div>
+              </label>
             </div>
         </div>
         
-      <hr/>
-        <div class="frow-3 frow align">
-          <div class="form-item">
-            <label for="">Test</label>
-            <div class="input-wrapp">
-              <input type="text" class="form-text" />
-            </div>
-          </div>
-          <div class="form-item">
-            <label for="">Test</label>
-            <div class="input-wrapp">
-              <input type="text" class="form-text" />
-            </div>
-          </div>
-          <div class="form-item">
-            <label for="">Test</label>
-            <div class="input-wrapp">
-              <input type="text" class="form-text" />
-            </div>
-          </div>
-          <div class="form-item">
-            <label for="">Test</label>
-            <div class="input-wrapp">
-              <input type="text" class="form-text" />
-            </div>
-          </div>
-          <div class="form-item">
-            <label for="">Test</label>
-            <div class="input-wrapp">
-              <input type="text" class="form-text" />
-            </div>
-          </div>
-          <div class="form-item">
-            <label for="">Test</label>
-            <div class="input-wrapp">
-              <input type="text" class="form-text" />
-            </div>
-          </div>
-          <div class="form-item">
-            <label for="">Test</label>
-            <div class="input-wrapp">
-              <input type="text" class="form-text" />
-            </div>
-          </div>
-          <div class="form-item">
-            <label for="">Test</label>
-            <div class="input-wrapp">
-              <input type="text" class="form-text" />
-            </div>
-          </div>
-          <div class="form-item">
-            <label for="">Test</label>
-            <div class="input-wrapp">
-              <input type="text" class="form-text" />
-            </div>
-          </div>
-        </div> <!-- end frow -->
-      <hr/>  
+        <hr/>
+
+<!-- field text 
+================================================================================================ -->
+        <h2>field</h2>
         
         <div class="form-item">
           <label for="">Test</label>
-          <div class="input-wrapp">
+          <label class="input-wrapp">
             <input type="text" class="form-text" />
-          </div>
+          </label>
         </div>
         
-        <div class="form-item">
-          <label for="">dsadasdasdasdad</label>
-          <div class="input-wrapp">
-            <input type="text" class="form-text" />
-          </div>
-        </div>
+        <hr/>  
         
-        <div class="form-item">
-          <label for="">dsadasdasdadasd</label>
-          <div class="input-wrapp">
-            <input type="text" class="form-text" />
-          </div>
-        </div>
-        
-      <hr/>
-      <h2>form select option</h2>
+<!-- select
+================================================================================================ -->
+        <h2>form select option</h2>
         
         <div class="form-item">
           <label for="">dadasdasdasdas</label>
-          <div class="input-wrapp">
+          <label class="input-wrapp">
             <select>
               <option value="">test dadasddada</option>
               <option value="">test dadadsada </option>
               <option value="">test dad </option>
               <option value="">test dasdas das d dsada sdas</option>
             </select>
-          </div>
+          </label>
         </div>
         
-      <hr />
-      <h2>Form checkbox</h2>
-        
+        <hr />
+
+<!-- form checkbox
+================================================================================================ -->
+        <h2>Form checkbox</h2>
         <div class="form-item">
           <label class="option block">
             <input type="checkbox" value="1" />
@@ -158,24 +86,14 @@
           
           <label class="option">
             <input type="checkbox" valuye="2" />
-            Second checkbox
-          </label>
-          
-        </div>
-        
-        <div class="form-item">
-          <label class="option">
-            <input type="checkbox" valuye="2" />
-            Second checkbox
-          </label>
-          <label class="option">
-            <input type="checkbox" valuye="2" />
-            Second checkbox
+            dex checkbox
           </label>
         </div>
         
-      <hr/>
-      <h2>radio button</h2>
+        <hr />
+<!-- radio
+================================================================================================ -->
+        <h2>radio button</h2>
         
         <div class="form-item">
           <label for="r1">
@@ -188,23 +106,17 @@
           </label>
         </div>
         
-        <div class="form-item">
-          <label for="r3" class="block">
-            <input id="r3" type="radio" name="test2" />
-            treci
-          </label>
+        <hr/>
+
+<!-- action button 
+================================================================================================ -->
+        <h2>action button</h2>
+        <div class="action-wrap">
           
-          <label for="r4" class="block" >
-            <input id="r4" type="radio" name="test2" />
-            cetvrti
-          </label>
-        </div>
-      
-      <hr/>
-      <h2>action button</h2>
-        <div class="action-button">
-          <input type="submit" value="submit" />
-          <input type="button" value="button" />
+          <input class="button" type="submit" value="submit" />
+          
+          <input class="button" type="button" value="button" />
+          
         </div>
         
       </form>

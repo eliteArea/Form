@@ -2,59 +2,35 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/** 
- * Form api system
- * =============== */
-/**
- * Form property
- * ============= */
-/**
- * Item property
- * ============= */
-/**
- * Custom mode for filed
- * === */
-/* Form */
-/* Form field */
-/* Field input */
-/*
- * Mixin form
- * */
-/**
- * Form api core
- * =============================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\000034}}
 form {
-  background: #76afda;
-  padding: 10px;
-  width: auto;
-  margin: 20px;
-  min-width: 200px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  /* rowwing layout */
+  /* /input-wrapp */
+  /* tarea */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\000036}}
 form .form-item {
   margin: 10px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000380}}
-form label.block {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000311}}
+form label.option {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000314}}
+form label.option.block {
   display: block;
   margin: 5px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000323}}
 form .input-wrapp {
-  background-color: white;
-  border: 1px solid #4a4a4a;
+  background-color: #FFFFFF;
+  border: 1px solid #CECECE;
   margin: 10px 0;
   padding: 5px;
   cursor: text;
+  display: block;
+  /* field list end */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000335}}
 form .input-wrapp input[type=text],
 form .input-wrapp input[type=url],
 form .input-wrapp input[type=tel],
@@ -65,9 +41,9 @@ form .input-wrapp select {
   margin: 0;
   width: 100%;
   padding: 0;
-  /* recomend to change only font's and colors */
+  outline: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000343}}
 form .input-wrapp input[type=text]:focus,
 form .input-wrapp input[type=url]:focus,
 form .input-wrapp input[type=tel]:focus,
@@ -75,26 +51,7 @@ form .input-wrapp input[type=email]:focus,
 form .input-wrapp select:focus {
   outline: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003114}}
-form input[type=submit],
-form input[type=button] {
-  background-color: #F0F0F0;
-  border: 1px solid #8f8f8f;
-  padding: 3px 9px;
-  color: #3A3A3A;
-  cursor: pointer;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003122}}
-form input[type=submit]:hover,
-form input[type=button]:hover {
-  background-color: #F9F9F9;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000351}}
 form .tarea {
   *zoom: 1;
 }
@@ -107,7 +64,7 @@ form .tarea:after {
   overflow: hidden;
   visibility: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000355}}
 form .tarea .input-wrapp textarea {
   background: none;
   border: none;
@@ -115,230 +72,15 @@ form .tarea .input-wrapp textarea {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003145}}
-form .frow-2 {
-  margin-left: -10px;
-  *zoom: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
-form .frow-2:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000352}}
-form .frow-2 .form-item {
-  width: 50%;
-  float: left;
-  min-width: 200px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000356}}
-form .frow-2 .form-item label {
-  margin-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000359}}
-form .frow-2 .form-item .input-wrapp {
-  margin-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003149}}
-form .frow-3 {
-  margin-left: -40px;
-  *zoom: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
-form .frow-3:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000352}}
-form .frow-3 .form-item {
-  width: 33.33%;
-  float: left;
-  min-width: 200px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000356}}
-form .frow-3 .form-item label {
-  margin-left: 40px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000359}}
-form .frow-3 .form-item .input-wrapp {
-  margin-left: 40px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003153}}
-form .frow-4 {
-  margin-left: -10px;
-  *zoom: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
-form .frow-4:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000352}}
-form .frow-4 .form-item {
-  width: 25%;
-  float: left;
-  min-width: 200px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000356}}
-form .frow-4 .form-item label {
-  margin-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000359}}
-form .frow-4 .form-item .input-wrapp {
-  margin-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003157}}
-form .frow-5 {
-  margin-left: -10px;
-  *zoom: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
-form .frow-5:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000352}}
-form .frow-5 .form-item {
-  width: 20%;
-  float: left;
-  min-width: 200px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000356}}
-form .frow-5 .form-item label {
-  margin-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000359}}
-form .frow-5 .form-item .input-wrapp {
-  margin-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003161}}
-form .frow-6 {
-  margin-left: -10px;
-  *zoom: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
-form .frow-6:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000352}}
-form .frow-6 .form-item {
-  width: 16.66%;
-  float: left;
-  min-width: 200px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000356}}
-form .frow-6 .form-item label {
-  margin-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000359}}
-form .frow-6 .form-item .input-wrapp {
-  margin-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003165}}
-form .frow-7 {
-  margin-left: -10px;
-  *zoom: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
-form .frow-7:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000352}}
-form .frow-7 .form-item {
-  width: 14.28%;
-  float: left;
-  min-width: 200px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000356}}
-form .frow-7 .form-item label {
-  margin-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000359}}
-form .frow-7 .form-item .input-wrapp {
-  margin-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003169}}
-form .frow-8 {
-  margin-left: -10px;
-  *zoom: 1;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000322}}
-form .frow-8:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000352}}
-form .frow-8 .form-item {
-  width: 12.5%;
-  float: left;
-  min-width: 200px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000356}}
-form .frow-8 .form-item label {
-  margin-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\0000359}}
-form .frow-8 .form-item .input-wrapp {
-  margin-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003175}}
-form .frow.align {
-  text-align: center;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003177}}
-form .frow.align .form-item {
-  display: inline-block;
-  float: none;
-  margin-left: -3px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003181}}
-form .frow.align .form-item label {
-  display: block;
-  text-align: left;
+  outline: none;
 }
 
-/* field row asset mixin */
-@media all and (max-width: 660px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_form_api\.scss}line{font-family:\00003197}}
-  form .frow .form-item {
-    min-width: 100%;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_custom_form\.scss}line{font-family:\000036}}
-form .input-wrapp.focus {
-  border-color: #D2262B;
-  -webkit-box-shadow: red 2px 2px 10px;
-  -moz-box-shadow: red 2px 2px 10px;
-  box-shadow: red 2px 2px 10px;
+/* form */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Master\/Desktop\/EA\/Form\/sass\/api\/_custom_form\.scss}line{font-family:\000031}}
+body {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aeaeae), color-stop(100%, #f0f0f0));
+  background-image: -webkit-linear-gradient(top, #aeaeae, #f0f0f0);
+  background-image: -moz-linear-gradient(top, #aeaeae, #f0f0f0);
+  background-image: -o-linear-gradient(top, #aeaeae, #f0f0f0);
+  background-image: linear-gradient(top, #aeaeae, #f0f0f0);
 }
